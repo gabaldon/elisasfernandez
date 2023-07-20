@@ -1,8 +1,9 @@
 <template>
   <div class="container">
-    <h1>
-      Comming soon...
-    </h1>
+    <div class="under-constrution">
+      <img class="comming-soon" src="../public/logo.png" alt="Comming soon..." />
+      <h1>This web is under construction!</h1>
+    </div>
   </div>
 </template>
 
@@ -32,5 +33,15 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.under-constrution {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  justify-items: center;
+  width: 250px;
+}
+.comming-soon {
+  width: 200px;
 }
 </style>
