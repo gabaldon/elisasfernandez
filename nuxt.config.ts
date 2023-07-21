@@ -78,5 +78,13 @@ export default defineNuxtConfig({
     },
   },
   components: true,
-  css: ['~/styles/colors.scss', '~/styles/main.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/styles/main.scss";',
+        },
+      },
+    },
+  },
 })

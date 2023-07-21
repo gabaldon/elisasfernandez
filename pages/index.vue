@@ -35,7 +35,7 @@ export default {
   height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: center;
-  background-color: $black;
+  background-color: $white;
   align-items: center;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
