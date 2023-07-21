@@ -13,7 +13,13 @@ export default defineNuxtConfig({
           name: 'title',
           content: 'Elisa S Fernández',
         },
-        { hid: 'description', name: 'description', content: process.env.npm_package_description || 'Elisa S Fernández is a Photographer based in Madrid - elisasanchezfernandez@gmail.com' },
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            process.env.npm_package_description ||
+            'Elisa S Fernández is a Photographer based in Madrid - elisasanchezfernandez@gmail.com',
+        },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
@@ -64,9 +70,13 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap' }
-      ]
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap',
+        },
+      ],
     },
   },
   components: true,
+  css: ['~/styles/colors.scss', '~/styles/main.scss'],
 })

@@ -1,8 +1,12 @@
 <template>
   <div class="container">
     <div class="under-constrution">
-      <img class="comming-soon" src="../public/logo.png" alt="Comming soon..." />
-      <h1>This web is under construction!</h1>
+      <img
+        class="comming-soon"
+        src="../public/logo.png"
+        alt="Comming soon..."
+      />
+      <h1>{{ $t('title') }}</h1>
     </div>
   </div>
 </template>
@@ -24,24 +28,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   margin: 0 auto;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: center;
+  background-color: $black;
   align-items: center;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-}
-.under-constrution {
-  display: grid;
-  grid-template-rows: max-content max-content;
-  justify-items: center;
-  width: 250px;
-}
-.comming-soon {
-  width: 200px;
+  .under-constrution {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    justify-items: center;
+    width: 250px;
+  }
+  .comming-soon {
+    width: 200px;
+  }
 }
 </style>
