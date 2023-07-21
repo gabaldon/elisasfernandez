@@ -1,1 +1,0 @@
-import{_ as e,l as t,k as n,m as s}from"./entry.9c680246.js";const o={head(){return{name:"index",title:this.$t("head.title"),meta:[{name:this.$t("head.title"),content:this.$t("description")}]}}},a={class:"container"},i=s("h1",null," Comming soon... ",-1),_=[i];function c(d,r,l,h,m,p){return n(),t("div",a,_)}const x=e(o,[["render",c]]);export{x as default};
