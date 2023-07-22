@@ -42,6 +42,9 @@ defineProps({
   border-radius: 24px;
   border: none;
   cursor: pointer;
+  &:hover .arrow-right {
+    transform: translateX(4px) translateY(-2px);
+  }
   .arrow-right {
     width: 24px;
   }

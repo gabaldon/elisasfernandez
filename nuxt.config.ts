@@ -74,6 +74,7 @@ export default defineNuxtConfig({
   components: true,
   modules: ['@nuxt/image'],
   vite: {
+    assetsInclude: ['**/**/*.mov', '/**/*.mov', '/*.mov'],
     css: {
       preprocessorOptions: {
         scss: {

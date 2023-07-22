@@ -13,11 +13,9 @@
       />
       <p class="description">{{ $t('top-choice-description') }}</p>
       <div class="btns-container">
-        <a href=""
-          ><CustomButton :type="'primary'">{{
-            $t('prototype')
-          }}</CustomButton></a
-        >
+        <NuxtLink to="/topchoice/prototype">
+          <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
+        </NuxtLink>
         <NuxtLink to="/topchoice">
           <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
         </NuxtLink>
@@ -26,7 +24,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .image {
   width: 600px;
 }
