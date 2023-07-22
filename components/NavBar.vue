@@ -8,14 +8,14 @@
           <img src="@/assets/svg/close.svg" alt="close menu" />
         </div>
         <li class="yellow">
-          <a
-            class="link"
-            target="_blank"
-            href="mailto:elisasanchezfernandez@gmail.com"
-            >{{ $t('contact') }}</a
-          >
+          <NuxtLink class="logo-link" to="/about">{{ $t('about') }}</NuxtLink>
         </li>
         <li>
+          <NuxtLink class="logo-link" to="/contact">{{
+            $t('contact')
+          }}</NuxtLink>
+        </li>
+        <li class="yellow">
           <a
             class="link"
             target="_blank"
@@ -54,6 +54,7 @@ function closeMenu() {
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  top: 0;
   z-index: 500;
   .logo-link {
     color: $black;
@@ -120,7 +121,7 @@ function closeMenu() {
     .navbar-links {
       padding: 0;
       display: grid;
-      grid-template-rows: repeat(2, max-content);
+      grid-template-rows: repeat(3, max-content);
       grid-template-columns: 1fr;
       position: fixed;
       width: 100vw;
@@ -138,6 +139,7 @@ function closeMenu() {
         justify-content: flex-end;
       }
       li {
+        height: max-content;
         padding: 8px;
       }
     }

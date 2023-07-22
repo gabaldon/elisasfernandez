@@ -8,9 +8,10 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: 80px;
 }
 </style>

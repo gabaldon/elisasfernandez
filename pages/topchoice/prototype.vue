@@ -27,13 +27,12 @@
 import { ref } from 'vue'
 const selectedOption = ref('Video')
 function updatePrototypeView(option: string) {
-  console.log(option)
   selectedOption.value = option
 }
 </script>
 <style lang="scss" scoped>
 .prototype-container {
-  margin-top: 90px;
+  margin-top: 34px;
   margin-bottom: 34px;
   display: grid;
   row-gap: 24px;

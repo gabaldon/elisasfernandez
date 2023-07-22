@@ -5,5 +5,12 @@
   "cv": "CV",
   "top-choice-description": "Vote and discover the trip you're looking for",
   "prototype": "Prototype",
-  "case-study": "Case study"
+  "case-study": "Case study",
+  "about": "ABOUT",
+  "about-me-title": "hello! {0} me",
+  "about-me-1": "Product designer and journalist with more than 10 years of experience in marketing and social media companies. I have worked as a photographer and journalist for national magazines such as El País or Forbes and as a video editor for brands such as Adidas, Iberdrola or Nivea.",
+  "about-me-2": "Specializing in UX/UI allowed me to expand my knowledge and combine two of my main interests: communication, design and technology. The intensive UX/UI bootcamp at Ironhack has consolidated my creativity to create digital services focused on simplicity and functionality.",
+  "about-me-3": "Thank you for reading and do not hesitate to contact me at",
+  "what-i-do": "WHAT I DO",
+  "contact-me-title": "hello! contact me"
 }

@@ -13,7 +13,7 @@
   </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .hero {
   background-color: white;
   height: 90vh;
