@@ -1,6 +1,7 @@
 <template>
   <NuxtLayout>
     <HeroSection />
+    <TopChoiceCard />
   </NuxtLayout>
 </template>
 

@@ -16,11 +16,12 @@
 <style lang="scss">
 .hero {
   background-color: white;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: space-between;
   flex-direction: column;
+  text-align: center;
 }
 
 .hero-title {
