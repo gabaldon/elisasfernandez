@@ -13,3 +13,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}

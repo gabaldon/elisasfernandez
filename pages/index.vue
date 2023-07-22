@@ -1,8 +1,11 @@
 <template>
   <div class="container">
     <div class="under-constrution">
-      <img
+      <nuxt-picture
+        sizes="sm:200px md:400px lg:800px"
+        format="avif,webp"
         class="comming-soon"
+        loading="lazy"
         src="../public/logo.png"
         alt="Comming soon..."
       />
@@ -46,6 +49,8 @@ export default {
   }
   .comming-soon {
     width: 200px;
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
