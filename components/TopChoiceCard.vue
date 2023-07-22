@@ -1,13 +1,6 @@
 <template>
   <div class="blue-background">
-    <nuxt-picture
-      format="avif,webp"
-      src="/png/top-choice-mockup.png"
-      alt="Top choice mockup"
-      sizes="sm:200px md:400px lg:600px"
-      loading="lazy"
-      quality="100"
-    />
+    <img class="image" src="~/assets/png/top-choice-mockup.png" alt="Top choice mockup" />
     <div class="project-card-container">
       <img
         class="top-choice-icon"
@@ -16,13 +9,19 @@
       />
       <p class="description">{{ this.$t('top-choice-description') }}</p>
       <div class="btns-container">
-        <CustomButton :type="'primary'">{{ this.$t('Prototype') }}</CustomButton>
-        <CustomButton type="secondary">{{ this.$t('Case study') }}</CustomButton>
+        <a href=""><CustomButton :type="'primary'">{{ this.$t('prototype') }}</CustomButton></a>
+        <NuxtLink to="/topchoice">
+          <CustomButton type="secondary">{{ this.$t('case-study') }}</CustomButton>
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
+
 <style lang="scss">
+.image {
+  width: 600px;
+}
 .blue-background {
   background-color: $blue;
   padding: 120px 70px;
