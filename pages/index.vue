@@ -38,7 +38,6 @@ export default {
   background-color: $white;
   align-items: center;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
   .under-constrution {
     display: grid;
     grid-template-rows: max-content max-content;
