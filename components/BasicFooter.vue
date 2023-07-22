@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <h1 class="name">{{ this.$t('name') }}</h1>
+    <h1 class="name">{{ $t('name') }}</h1>
     <div class="footer-links">
       <a
         class="footer-link"

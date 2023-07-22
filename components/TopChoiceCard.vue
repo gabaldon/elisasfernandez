@@ -1,17 +1,25 @@
 <template>
   <div class="blue-background">
-    <img class="image" src="~/assets/png/top-choice-mockup.png" alt="Top choice mockup" />
+    <img
+      class="image"
+      src="~/assets/png/top-choice-mockup.png"
+      alt="Top choice mockup"
+    />
     <div class="project-card-container">
       <img
         class="top-choice-icon"
         src="@/assets/svg/top-choice-title.svg"
         alt="Top Choice title"
       />
-      <p class="description">{{ this.$t('top-choice-description') }}</p>
+      <p class="description">{{ $t('top-choice-description') }}</p>
       <div class="btns-container">
-        <a href=""><CustomButton :type="'primary'">{{ this.$t('prototype') }}</CustomButton></a>
+        <a href=""
+          ><CustomButton :type="'primary'">{{
+            $t('prototype')
+          }}</CustomButton></a
+        >
         <NuxtLink to="/topchoice">
-          <CustomButton type="secondary">{{ this.$t('case-study') }}</CustomButton>
+          <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
         </NuxtLink>
       </div>
     </div>

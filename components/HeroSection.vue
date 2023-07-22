@@ -35,6 +35,7 @@
   gap: 8px;
 }
 h2 {
+  font-family: 'PPMori';
   margin: 0;
   font-size: 32px;
   font-weight: bold;
