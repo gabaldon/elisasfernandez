@@ -12,6 +12,6 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 80px;
+  margin-top: 32px;
 }
 </style>

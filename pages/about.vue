@@ -88,7 +88,7 @@
     grid-template-columns: 1fr;
     .about-content {
       .about-title {
-        margin-left: 16px;
+        font-size: 80px;
       }
     }
   }
@@ -96,11 +96,9 @@
 @media (max-width: 300px) {
   .about-container {
     .about-content {
+      margin: 16px;
       .about-title {
-        font-size: 80px;
-      }
-      .text {
-        margin: 16px;
+        font-size: 60px;
       }
     }
   }

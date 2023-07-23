@@ -8,10 +8,10 @@
       />
       <p class="description">{{ $t('top-choice-description') }}</p>
       <div class="btns-container">
-        <NuxtLink to="/topchoice/prototype">
+        <NuxtLink to="/blablacar/prototype">
           <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
         </NuxtLink>
-        <NuxtLink to="/topchoice">
+        <NuxtLink to="/blablacar">
           <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
         </NuxtLink>
       </div>

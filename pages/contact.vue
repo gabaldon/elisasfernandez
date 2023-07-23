@@ -47,8 +47,7 @@
     max-width: 700px;
     font-size: 120px;
     font-family: 'PPMori';
-    margin-left: 24px;
-    margin-bottom: 48px;
+    margin: 24px 24px 48px 24px;
     .highlighted-text {
       color: $yellow;
     }
@@ -69,14 +68,19 @@
 @media (max-width: 600px) {
   .contact-container {
     grid-template-columns: 1fr;
+    .contact-title {
+      font-size: 80px;
+    }
   }
 }
 @media (max-width: 300px) {
   .contact-container {
-    .contact-content {
-      .contact-title {
-        font-size: 80px;
-      }
+    .contact-title {
+      font-size: 60px;
+      margin: 16px;
+    }
+    .contact-links {
+      margin-left: 16px;
     }
   }
 }

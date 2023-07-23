@@ -1,0 +1,11 @@
+<template>
+  <NuxtLayout>
+    <embed src="/pdf/blablacar-case-study.pdf" class="pdf" />
+  </NuxtLayout>
+</template>
+<style lang="scss">
+.pdf {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
