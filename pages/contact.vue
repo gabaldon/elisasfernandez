@@ -21,7 +21,7 @@
           <a
             class="social-link"
             target="_blank"
-            href="https://www.behance.net/elisa-sf"
+            href="https://www.linkedin.com/in/elisasanchezfernandez/"
             >/in/elisasanchezfernandez/</a
           >
         </div>
@@ -43,6 +43,7 @@
   display: grid;
   grid-template-rows: repeat(2, max-content);
   min-height: 100vh;
+  padding-bottom: 32px;
   .contact-title {
     max-width: 700px;
     font-size: 120px;

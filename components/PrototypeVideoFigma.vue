@@ -5,7 +5,10 @@
       :selected-option="selectedOption"
       @change="updatePrototypeView"
     />
-
+    <NuxtLink class="floating-btn" :to="nextProjectUrl">
+      <CustomButton type="primary">{{ $t('next-project') }}</CustomButton>
+    </NuxtLink>
+    <InfoCard v-if="selectedOption == 'Figma'" :text="$t('figma-info')" />
     <iframe
       v-if="selectedOption == 'Figma'"
       class="prototype"
@@ -23,6 +26,10 @@ defineProps({
     type: String,
     required: true,
   },
+  nextProjectUrl: {
+    type: String,
+    required: true,
+  },
   videoUrl: {
     type: String,
     required: true,
@@ -33,6 +40,11 @@ function updatePrototypeView(option: string) {
 }
 </script>
 <style lang="scss" scoped>
+.floating-btn {
+  position: fixed;
+  top: 88px;
+  right: 24px;
+}
 .prototype-container {
   margin-top: 24px;
   margin-bottom: 32px;
@@ -42,8 +54,15 @@ function updatePrototypeView(option: string) {
   justify-content: center;
   align-items: center;
   .prototype {
-    width: 100vw;
+    width: 80vw;
     height: 80vh;
+  }
+}
+@media (max-width: 600px) {
+  .prototype-container {
+    .floating-btn {
+      display: none;
+    }
   }
 }
 </style>

@@ -11,9 +11,16 @@
         <NuxtLink to="/blablacar/prototype">
           <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
         </NuxtLink>
-        <NuxtLink to="/blablacar">
+        <NuxtLink v-if="isDesktop" to="/blablacar">
           <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
         </NuxtLink>
+        <a
+          v-else
+          target="_blank"
+          href="https://www.behance.net/gallery/176023503/BLABLACAR-NEW-FEATURE-CASE-STUDY"
+        >
+          <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
+        </a>
       </div>
     </div>
     <img
@@ -23,6 +30,14 @@
     />
   </div>
 </template>
+
+<script setup>
+import { computed } from 'vue'
+const isDesktop = computed(() => {
+  const platform = navigator.platform.toLowerCase()
+  return /mac|macintel|win|linux/i.test(platform)
+})
+</script>
 
 <style lang="scss" scoped>
 .image {
@@ -64,11 +79,12 @@
 }
 @media (max-width: 600px) {
   .image {
-    width: 200px;
+    width: 100px;
   }
   .blue-background {
     padding: 32px 16px;
     margin: 16px;
+    background-color: $green;
     border-radius: 24px;
     .project-card-container {
       .top-choice-icon {

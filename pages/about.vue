@@ -92,6 +92,9 @@
       }
     }
   }
+  .what-i-do {
+    text-align: left;
+  }
 }
 @media (max-width: 300px) {
   .about-container {

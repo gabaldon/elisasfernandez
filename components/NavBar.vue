@@ -17,7 +17,7 @@
           <a
             class="link"
             target="_blank"
-            href="https://www.linkedin.com/in/elisasanchezfernandez/"
+            href="https://drive.google.com/drive/folders/1UD6pTkab1vyQJ99DkS1CJmsbzeI97Aup?usp=sharing"
             >{{ $t('cv') }}</a
           >
         </li>
