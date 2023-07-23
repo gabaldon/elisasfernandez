@@ -63,6 +63,9 @@
   }
 }
 @media (max-width: 600px) {
+  .image {
+    width: 200px;
+  }
   .blue-background {
     padding: 32px 16px;
     margin: 16px;
