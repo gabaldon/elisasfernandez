@@ -1,1 +1,0 @@
-import{_ as t}from"./layout.d9cf9c4e.js";import{_,f as o,w as c,o as n,a as s}from"./entry.9723afbf.js";const a={},r=s("embed",{src:"/pdf/top-choice-case-study.pdf",class:"pdf"},null,-1);function d(f,p){const e=t;return n(),o(e,null,{default:c(()=>[r]),_:1})}const i=_(a,[["render",d]]);export{i as default};
