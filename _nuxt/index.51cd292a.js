@@ -1,1 +1,0 @@
-import{_ as t}from"./layout.cc345d50.js";import{_,f as n,w as o,o as s,a}from"./entry.b5750aad.js";const c={},r=a("embed",{src:"/pdf/blablacar-case-study.pdf",class:"pdf"},null,-1);function d(l,f){const e=t;return s(),n(e,null,{default:o(()=>[r]),_:1})}const i=_(c,[["render",d]]);export{i as default};
