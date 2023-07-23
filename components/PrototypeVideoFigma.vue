@@ -1,21 +1,19 @@
 <template>
-  <NuxtLayout>
-    <div class="prototype-container">
-      <CustomSwitch
-        :options="['Video', 'Figma']"
-        :selected-option="selectedOption"
-        @change="updatePrototypeView"
-      />
+  <div class="prototype-container">
+    <CustomSwitch
+      :options="['Video', 'Figma']"
+      :selected-option="selectedOption"
+      @change="updatePrototypeView"
+    />
 
-      <iframe
-        v-if="selectedOption == 'Figma'"
-        class="prototype"
-        :src="figmaUrl"
-        allowfullscreen
-      ></iframe>
-      <video v-else controls autoplay :src="videoUrl" class="prototype"></video>
-    </div>
-  </NuxtLayout>
+    <iframe
+      v-if="selectedOption == 'Figma'"
+      class="prototype"
+      :src="figmaUrl"
+      allowfullscreen
+    ></iframe>
+    <video v-else controls autoplay :src="videoUrl" class="prototype"></video>
+  </div>
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'

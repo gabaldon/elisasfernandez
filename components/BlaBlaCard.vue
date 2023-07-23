@@ -26,7 +26,7 @@
 
 <style lang="scss" scoped>
 .image {
-  width: 400px;
+  width: 300px;
 }
 .blue-background {
   background-color: $white;
@@ -56,6 +56,9 @@
 }
 @media (max-width: 1200px) {
   .project-card-container {
+    margin-top: 32px;
+  }
+  .image {
     margin-top: 32px;
   }
 }

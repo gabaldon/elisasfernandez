@@ -8,12 +8,10 @@
           <img src="@/assets/svg/close.svg" alt="close menu" />
         </div>
         <li class="yellow">
-          <NuxtLink class="logo-link" to="/about">{{ $t('about') }}</NuxtLink>
+          <NuxtLink class="link" to="/about">{{ $t('about') }}</NuxtLink>
         </li>
         <li>
-          <NuxtLink class="logo-link" to="/contact">{{
-            $t('contact')
-          }}</NuxtLink>
+          <NuxtLink class="link" to="/contact">{{ $t('contact') }}</NuxtLink>
         </li>
         <li class="yellow">
           <a
@@ -54,7 +52,8 @@ function closeMenu() {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  top: 0;
+  margin-top: 16px;
+  top: -16px;
   z-index: 500;
   .logo-link {
     color: $black;
@@ -68,15 +67,16 @@ function closeMenu() {
   }
   .navbar-links {
     font-weight: lighter;
-    padding: 24px;
     gap: 24px;
     display: flex;
     justify-content: space-between;
     .link {
       text-decoration: none;
       font-size: 16px;
-      padding: 0 8px;
+      padding: 24px;
       text-decoration: none;
+      width: 100%;
+      display: block;
       color: black;
       &:hover {
         color: grey;
@@ -133,6 +133,9 @@ function closeMenu() {
       background-color: $grey;
       opacity: 1;
       transition: all 0.75s ease;
+      .link {
+        padding: 8px 16px 8px 16px;
+      }
       .close-menu-container {
         padding: 16px;
         display: flex;
@@ -140,7 +143,6 @@ function closeMenu() {
       }
       li {
         height: max-content;
-        padding: 8px;
       }
     }
   }

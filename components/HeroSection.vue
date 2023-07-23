@@ -33,6 +33,7 @@
   align-items: center;
   flex-direction: column;
   gap: 8px;
+  margin: 16px;
 }
 h2 {
   font-family: 'PPMori';
@@ -113,6 +114,11 @@ h3 {
   }
   100% {
     transform: translate(-100vw, -50px) scale(1.1);
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    height: 75vh;
   }
 }
 </style>

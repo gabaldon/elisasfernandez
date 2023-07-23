@@ -7,5 +7,6 @@
 .pdf {
   width: 100vw;
   height: 100vh;
+  margin-top: 32px;
 }
 </style>
