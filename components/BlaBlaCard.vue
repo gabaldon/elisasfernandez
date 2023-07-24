@@ -6,7 +6,7 @@
         src="@/assets/svg/blablacar-title.svg"
         alt="Blablacar title"
       />
-      <p class="description">{{ $t('top-choice-description') }}</p>
+      <p class="description">{{ $t('blablacar-description') }}</p>
       <div class="btns-container">
         <NuxtLink to="/blablacar/prototype">
           <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
