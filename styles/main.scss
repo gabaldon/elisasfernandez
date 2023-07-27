@@ -25,6 +25,11 @@ img {
   object-fit: contain;
   image-rendering: crisp-edges;
 }
+.floating-btn {
+  position: fixed;
+  top: 88px;
+  right: 24px;
+}
 h3 {
   margin: 0;
 }

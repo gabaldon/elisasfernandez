@@ -1,5 +1,9 @@
 <template>
   <NuxtLayout>
-    <CaseStudy :pdf-url="'/pdf/blablacar-case-study.pdf'" />
+    <CaseStudy
+      :pdf-url="'/pdf/blablacar-case-study.pdf'"
+      :next-project-url="'/topchoice'"
+      :prototype-url="'/blablacar/prototype'"
+    />
   </NuxtLayout>
 </template>

@@ -40,11 +40,6 @@ function updatePrototypeView(option: string) {
 }
 </script>
 <style lang="scss" scoped>
-.floating-btn {
-  position: fixed;
-  top: 88px;
-  right: 24px;
-}
 .prototype-container {
   margin-top: 24px;
   margin-bottom: 32px;
