@@ -28,7 +28,7 @@ defineProps({
     type: String,
     default: 'default',
     validator(value) {
-      return ['primary', 'secondary', 'disable'].includes(value)
+      return ['primary', 'secondary', 'with-border', 'disable'].includes(value)
     },
   },
 })
@@ -71,6 +71,17 @@ defineProps({
     -ms-transition: all 3ms linear;
     transition: all 3ms linear;
     background-color: $white;
+    .arrow {
+      stroke: $black;
+    }
+  }
+  &.with-border {
+    color: $black;
+    -webkit-transition: all 3ms linear;
+    -ms-transition: all 3ms linear;
+    transition: all 3ms linear;
+    background-color: $white;
+    border: 1px solid $black;
     .arrow {
       stroke: $black;
     }

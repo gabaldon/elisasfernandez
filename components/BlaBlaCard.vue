@@ -12,7 +12,7 @@
           <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
         </NuxtLink>
         <NuxtLink v-if="isDesktop" to="/blablacar">
-          <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
+          <CustomButton type="with-border">{{ $t('case-study') }}</CustomButton>
         </NuxtLink>
         <a
           v-else

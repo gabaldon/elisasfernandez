@@ -5,7 +5,7 @@
         <CustomButton type="primary">{{ $t('prototype') }}</CustomButton>
       </NuxtLink>
       <NuxtLink :to="nextProjectUrl">
-        <CustomButton type="secondary">{{ $t('next-project') }}</CustomButton>
+        <CustomButton type="with-border">{{ $t('next-project') }}</CustomButton>
       </NuxtLink>
     </div>
     <object class="pdf" :data="pdfUrl" type="application/pdf">
