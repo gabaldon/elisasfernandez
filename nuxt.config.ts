@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import svgLoader from 'vite-svg-loader'
+
 export default defineNuxtConfig({
   ssr: false,
   spaLoadingTemplate: false,
@@ -75,6 +77,7 @@ export default defineNuxtConfig({
   components: true,
   modules: ['@nuxt/image'],
   vite: {
+    plugins: [svgLoader()],
     assetsInclude: ['**/**/*.mov', '/**/*.mov', '/*.mov'],
     css: {
       preprocessorOptions: {

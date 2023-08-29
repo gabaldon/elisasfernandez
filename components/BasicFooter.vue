@@ -6,23 +6,29 @@
         class="footer-link"
         href="https://www.instagram.com/elimita/"
         target="_blank"
-        ><img class="icon" src="@/assets/svg/logo-instagram.svg"
+        ><InstagramLogo class="icon"
       /></a>
       <a
         class="footer-link"
         href="https://www.linkedin.com/in/elisasanchezfernandez/"
         target="_blank"
-        ><img class="icon" src="@/assets/svg/logo-linkedin.svg"
+        ><LinkedinLogo class="icon"
       /></a>
       <a
         class="footer-link"
         href="https://www.behance.net/elisa-sf"
         target="_blank"
-        ><img class="icon" src="@/assets/svg/logo-behance.svg"
+        ><BehanceLogo class="icon"
       /></a>
     </div>
   </div>
 </template>
+
+<script setup>
+import BehanceLogo from '@/assets/svg/logo-behance.svg'
+import LinkedinLogo from '@/assets/svg/logo-linkedin.svg'
+import InstagramLogo from '@/assets/svg/logo-instagram.svg'
+</script>
 
 <style lang="scss" scoped>
 .footer {

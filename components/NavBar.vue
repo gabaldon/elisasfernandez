@@ -5,7 +5,7 @@
     <nav class="navbar-tabs rounded-border">
       <ul class="navbar-links rounded-border">
         <div class="close-menu-container" @click="closeMenu">
-          <img src="@/assets/svg/close.svg" alt="close menu" />
+          <Close />
         </div>
         <li class="yellow">
           <NuxtLink class="link" to="/about">{{ $t('about') }}</NuxtLink>
@@ -21,23 +21,24 @@
             >{{ $t('cv') }}</a
           >
         </li>
+        <li class="link language-select">
+          <LanguageSelector />
+        </li>
       </ul>
     </nav>
     <label for="side-menu" class="hamburguer-container">
-      <img
-        id="side-menu"
-        ref="menu"
-        for="side-menu"
-        class="hamburguer"
-        src="@/assets/svg/hamburguer.svg"
-        alt="menu"
-      />
+      <div id="side-menu" ref="menu" for="side-menu">
+        <Hamburger class="hamburguer" />
+      </div>
     </label>
   </header>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import LanguageSelector from './LanguageSelector.vue'
+import Hamburger from '@/assets/svg/hamburguer.svg'
+import Close from '@/assets/svg/close.svg'
 const menu = ref()
 
 function closeMenu() {
@@ -67,8 +68,8 @@ function closeMenu() {
   }
   .navbar-links {
     font-weight: lighter;
-    gap: 24px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
     justify-content: space-between;
     .link {
       text-decoration: none;
@@ -81,6 +82,11 @@ function closeMenu() {
       &:hover {
         color: grey;
       }
+      &.language-select {
+        padding: 16px;
+        justify-self: flex-end;
+        width: max-content;
+      }
     }
   }
   .hamburguer-container {
@@ -90,7 +96,7 @@ function closeMenu() {
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 706px) {
   .navbar {
     .navbar-tabs {
       display: block;
@@ -121,7 +127,7 @@ function closeMenu() {
     .navbar-links {
       padding: 0;
       display: grid;
-      grid-template-rows: repeat(3, max-content);
+      grid-template-rows: repeat(4, max-content);
       grid-template-columns: 1fr;
       position: fixed;
       width: 100vw;
@@ -135,6 +141,10 @@ function closeMenu() {
       transition: all 0.75s ease;
       .link {
         padding: 8px 16px 8px 16px;
+        &.language-select {
+          padding: 0px;
+          justify-self: flex-end;
+        }
       }
       .close-menu-container {
         padding: 16px;

@@ -2,8 +2,8 @@
   <section class="hero">
     <div class="bouncingball"></div>
     <div class="hero-title">
-      <h2>Hola! I’m Elisa</h2>
-      <h3>I am a UI UX designer based in Madrid.</h3>
+      <h2>{{ $t('hero-title') }}</h2>
+      <h3>{{ $t('hero-description') }}</h3>
     </div>
 
     <div class="mywork-link">
@@ -16,7 +16,7 @@
 <style lang="scss" scoped>
 .hero {
   background-color: white;
-  height: 90vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: space-between;

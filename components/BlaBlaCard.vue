@@ -1,11 +1,7 @@
 <template>
   <div class="blue-background">
     <div class="project-card-container">
-      <img
-        class="top-choice-icon"
-        src="@/assets/svg/blablacar-title.svg"
-        alt="Blablacar title"
-      />
+      <BlaBlaLogo class="top-choice-icon" />
       <p class="description">{{ $t('blablacar-description') }}</p>
       <div class="btns-container">
         <NuxtLink to="/blablacar/prototype">
@@ -33,6 +29,7 @@
 
 <script setup>
 import { computed } from 'vue'
+import BlaBlaLogo from '@/assets/svg/blablacar-title.svg'
 const isDesktop = computed(() => {
   const platform = navigator.platform.toLowerCase()
   return /mac|macintel|win|linux/i.test(platform)
