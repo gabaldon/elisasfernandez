@@ -2,6 +2,7 @@
   <NuxtLayout>
     <HeroSection />
     <TopChoiceCard />
+    <SchoolPayCard />
     <BlaBlaCard />
   </NuxtLayout>
 </template>

@@ -77,7 +77,23 @@ export default defineNuxtConfig({
   components: true,
   modules: ['@nuxt/image'],
   vite: {
-    plugins: [svgLoader()],
+    plugins: [
+      svgLoader({
+        svgoConfig: {
+          plugins: [
+            {
+              name: 'preset-default',
+              params: {
+                overrides: {
+                  removeViewBox: false,
+                  cleanupIds: false,
+                },
+              },
+            },
+          ],
+        },
+      }),
+    ],
     assetsInclude: ['**/**/*.mov', '/**/*.mov', '/*.mov'],
     css: {
       preprocessorOptions: {

@@ -61,6 +61,7 @@ h3 {
   height: 40px;
   width: 40px;
   margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .bouncingball {
