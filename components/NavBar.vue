@@ -70,11 +70,12 @@ function closeMenu() {
     font-weight: lighter;
     display: grid;
     grid-template-columns: repeat(4, max-content);
+    align-items: flex-start;
     justify-content: space-between;
     .link {
+      padding: 24px;
       text-decoration: none;
       font-size: 16px;
-      padding: 24px;
       text-decoration: none;
       width: 100%;
       display: block;

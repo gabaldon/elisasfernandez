@@ -75,6 +75,12 @@ const iconMap = computed(() => {
       margin-right: 8px;
     }
   }
+  .vs__dropdown-menu {
+    width: 80px;
+    position: absolute;
+    top: 38px;
+    left: -70px;
+  }
   .vs__open-indicator {
     font-size: 8px;
   }
@@ -111,7 +117,6 @@ const iconMap = computed(() => {
     margin: 0;
     padding: 4px 0 0 0;
     font-size: 20px;
-    width: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -138,14 +143,14 @@ const iconMap = computed(() => {
 
 @media (max-width: 706px) {
   .language-selector {
-    padding: 0;
+    padding: 8px 8px;
     .vs__selected {
       width: 100px;
     }
     .vs__dropdown-menu {
       position: relative;
-      top: none;
-      bottom: 110px;
+      top: -48px;
+      left: -4px;
     }
   }
 }
