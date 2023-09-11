@@ -1,27 +1,28 @@
 <template>
   <NuxtLayout>
     <HeroSection />
-    <TopChoiceCard />
-    <SchoolPayCard />
-    <BlaBlaCard />
+    <div v-if="!globalStore.showPhotos">
+      <TopChoiceCard />
+      <SchoolPayCard />
+      <BlaBlaCard />
+    </div>
   </NuxtLayout>
 </template>
 
-<script>
-export default {
-  head() {
-    return {
-      name: 'index',
-      title: this.$t('head.title'),
-      meta: [
-        {
-          name: this.$t('head.title'),
-          content: this.$t('description'),
-        },
-      ],
-    }
-  },
-}
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+import { useGlobalStore } from '@/stores/global'
+const { t } = useI18n()
+const globalStore = useGlobalStore()
+useHead({
+  title: t('head.title'),
+  meta: [
+    {
+      name: t('head.title'),
+      content: t('description'),
+    },
+  ],
+})
 </script>
 
 <style lang="scss">

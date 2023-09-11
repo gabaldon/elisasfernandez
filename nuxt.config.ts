@@ -75,7 +75,7 @@ export default defineNuxtConfig({
     },
   },
   components: true,
-  modules: ['@nuxt/image'],
+  modules: ['@nuxt/image', '@pinia/nuxt'],
   vite: {
     plugins: [
       svgLoader({

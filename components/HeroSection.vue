@@ -8,10 +8,33 @@
 
     <div class="mywork-link">
       <h4>my work</h4>
+      <CustomSwitch
+        :options="[MyWork.uxui, MyWork.photo]"
+        :selected-option="selectedOption"
+        @change="updatePrototypeView"
+      />
       <img class="arrow" src="@/assets/img/arrow.gif" />
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { useGlobalStore } from '@/stores/global'
+const globalStore = useGlobalStore()
+enum MyWork {
+  uxui = 'UX/UI',
+  photo = 'Photo',
+}
+const selectedOption = ref(MyWork.uxui)
+function updatePrototypeView(option: MyWork) {
+  selectedOption.value = option
+  if (option === MyWork.photo) {
+    globalStore.showPhotos = true
+  } else {
+    globalStore.showPhotos = false
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .hero {

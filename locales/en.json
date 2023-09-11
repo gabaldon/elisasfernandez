@@ -1,5 +1,9 @@
 {
   "name": "ELISA S FERNÁNDEZ",
+  "head": {
+    "title": "ELISA S FERNÁNDEZ",
+    "description": "I am a UI UX designer based in Madrid"
+  },
   "contact": "CONTACT",
   "hero-title": "Hola! I’m Elisa",
   "hero-description": "I am a UI UX designer based in Madrid.",
