@@ -8,7 +8,7 @@
     :prototype-link="'/blablacar/prototype'"
     :description="'blablacar-description'"
     :text-color="'black'"
-    :mockup="'blablacar-mockup'"
+    :mockup="'/v1694509565/blablacar-mockup_xokmmt.png'"
   />
 </template>
 

@@ -6,6 +6,7 @@
       <SchoolPayCard />
       <BlaBlaCard />
     </div>
+    <PhotoGrid v-else />
   </NuxtLayout>
 </template>
 

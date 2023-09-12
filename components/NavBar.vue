@@ -15,6 +15,7 @@
         </li>
         <li class="yellow">
           <a
+            aria-label="Download CV from google drive"
             class="link"
             target="_blank"
             href="https://drive.google.com/drive/folders/1UD6pTkab1vyQJ99DkS1CJmsbzeI97Aup?usp=sharing"
@@ -27,7 +28,7 @@
       </ul>
     </nav>
     <label for="side-menu" class="hamburguer-container">
-      <div id="side-menu" ref="menu" for="side-menu">
+      <div ref="menu" for="side-menu">
         <Hamburger class="hamburguer" />
       </div>
     </label>

@@ -13,6 +13,7 @@
           {{ $t('about-me-3') }}
           <a
             class="email"
+            aria-label="Send an email to Elisa S Fenandez"
             target="_blank"
             href="mailto:elisasanchezfernandez@gmail.com"
             >elisasanchezfernandez@gmail.com</a

@@ -5,9 +5,9 @@
     :bg-color="'#f3f5ff'"
     :behance-link="'https://www.behance.net/gallery/176023503/BLABLACAR-NEW-FEATURE-CASE-STUDY'"
     :case-study-link="'/schoolpay'"
-    :prototype-link="'/schoolpay/prototype'"
+    :prototype-link="'/'"
     :description="'schoolpay-description'"
     :text-color="'black'"
-    :mockup="'schoolpay-mockup'"
+    :mockup="'/v1694509565/schoolpay-mockup_dgigkn.png'"
   />
 </template>

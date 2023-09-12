@@ -2,11 +2,25 @@
 import svgLoader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
+  routeRules: {
+    '/assets/**': {
+      headers: { 'Cache-Control': 'max-age=3600, immutable' },
+    },
+    '/_nuxt/**': {
+      headers: { 'Cache-Control': 'max-age=3600, immutable' },
+    },
+  },
+  experimental: {
+    payloadExtraction: false,
+  },
   spaLoadingTemplate: false,
   app: {
     baseURL: '/',
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
       title: 'Elisa S Fernández',
       meta: [
         { charset: 'utf-8' },
@@ -71,11 +85,23 @@ export default defineNuxtConfig({
           content: 'Elisa S Fernández',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'preload', as: 'font' },
+      ],
     },
   },
   components: true,
-  modules: ['@nuxt/image', '@pinia/nuxt'],
+  modules: ['@nuxt/image-edge', '@pinia/nuxt'],
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/gabaldon/image/upload/',
+      modifiers: {
+        format: 'webp',
+        fit: 'cover',
+      },
+    },
+  },
   vite: {
     plugins: [
       svgLoader({

@@ -1,15 +1,23 @@
 <template>
   <div class="card-background" :style="backgroundColor">
-    <img
+    <NuxtImg
+      provider="cloudinary"
       class="image image-smallscreen"
-      :src="mockupUrl"
-      alt="Top choice mockup"
+      :alt="`mockup ${description}`"
+      :src="mockup"
+      width="600"
+      height="415"
+      sizes="sm:355px md:320px lg:480px"
     />
-    <img
+    <NuxtImg
       v-if="mockupPosition == 'left'"
+      provider="cloudinary"
       class="image image-bigscreen"
-      :src="mockupUrl"
-      alt="Top choice mockup"
+      :alt="`mockup ${description}`"
+      :src="mockup"
+      width="600"
+      height="415"
+      sizes="sm:355px md:320px lg:480px"
     />
     <div class="project-card-container">
       <SvgIcon class="title" :name="title" />
@@ -21,16 +29,25 @@
         <NuxtLink v-if="isDesktop" :to="caseStudyLink">
           <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
         </NuxtLink>
-        <a v-else target="_blank" :href="behanceLink">
+        <a
+          v-else
+          target="_blank"
+          :href="behanceLink"
+          aria-label="Go to the Behance profile"
+        >
           <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
         </a>
       </div>
     </div>
-    <img
+    <NuxtImg
       v-if="mockupPosition == 'right'"
+      provider="cloudinary"
       class="image image-bigscreen"
-      :src="mockupUrl"
-      alt="Top choice mockup"
+      :alt="`mockup ${description}`"
+      :src="mockup"
+      width="600"
+      height="415"
+      sizes="sm:355px md:320px lg:480px"
     />
   </div>
 </template>
@@ -38,8 +55,12 @@
 <script setup>
 import { computed } from 'vue'
 const isDesktop = computed(() => {
-  const platform = navigator.platform.toLowerCase()
-  return /mac|macintel|win|linux/i.test(platform)
+  if (process.client) {
+    const platform = navigator.platform.toLowerCase()
+    return /mac|macintel|win|linux/i.test(platform)
+  } else {
+    return false
+  }
 })
 
 const props = defineProps({
@@ -79,10 +100,6 @@ const props = defineProps({
     type: String,
     required: true,
   },
-})
-
-const mockupUrl = computed(() => {
-  return new URL(`/assets/png/${props.mockup}.png`, import.meta.url)
 })
 
 const backgroundColor = computed(() => {

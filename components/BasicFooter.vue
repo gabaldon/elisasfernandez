@@ -5,18 +5,21 @@
       <a
         class="footer-link"
         href="https://www.instagram.com/elimita/"
+        aria-label="Go to Instagram profile"
         target="_blank"
         ><InstagramLogo class="icon"
       /></a>
       <a
         class="footer-link"
         href="https://www.linkedin.com/in/elisasanchezfernandez/"
+        aria-label="Send an email to Elisa S Fernandez"
         target="_blank"
         ><LinkedinLogo class="icon"
       /></a>
       <a
         class="footer-link"
         href="https://www.behance.net/elisa-sf"
+        aria-label="Go to Behance profile"
         target="_blank"
         ><BehanceLogo class="icon"
       /></a>

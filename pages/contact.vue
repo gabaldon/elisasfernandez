@@ -12,6 +12,7 @@
           <a
             class="social-link"
             target="_blank"
+            aria-label="Send an email to Elisa S Fenandez"
             href="mailto:elisasanchezfernandez@gmail.com"
             >elisasanchezfernandez@gmail.com</a
           >
@@ -21,6 +22,7 @@
           <a
             class="social-link"
             target="_blank"
+            aria-label="Go to Linkendin profile"
             href="https://www.linkedin.com/in/elisasanchezfernandez/"
             >/in/elisasanchezfernandez/</a
           >
@@ -30,6 +32,7 @@
           <a
             class="social-link"
             target="_blank"
+            aria-label="Go to Behance profile"
             href="https://www.behance.net/elisa-sf"
             >https://www.behance.net/elisa-sf</a
           >
