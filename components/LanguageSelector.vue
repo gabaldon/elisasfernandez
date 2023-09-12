@@ -149,7 +149,7 @@ const iconMap = computed(() => {
     }
     .vs__dropdown-menu {
       position: relative;
-      top: -48px;
+      top: -110px;
       left: -4px;
     }
   }

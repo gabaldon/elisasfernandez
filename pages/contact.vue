@@ -41,6 +41,19 @@
     </div>
   </NuxtLayout>
 </template>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+useHead({
+  title: t('head.title'),
+  meta: [
+    {
+      name: t('head.title'),
+      content: t('head.contact-description'),
+    },
+  ],
+})
+</script>
 <style lang="scss" scoped>
 .contact-container {
   display: grid;

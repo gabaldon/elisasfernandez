@@ -2,7 +2,10 @@
   "name": "ELISA S FERNÁNDEZ",
   "head": {
     "title": "ELISA S FERNÁNDEZ",
-    "description": "I am a UI UX designer based in Madrid"
+    "uxui-description": "I am a UI UX designer based in Madrid",
+    "photo-description": "I am a photographer based in Madrid",
+    "aboutme-description": "Product designer and journalist with more than 10 years of experience in marketing and social media companies.",
+    "contact-description": "Contact me!"
   },
   "contact": "CONTACT",
   "hero-title": "Hola! I’m Elisa",

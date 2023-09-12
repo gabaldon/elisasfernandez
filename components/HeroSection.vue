@@ -26,19 +26,26 @@
 </template>
 
 <script setup lang="ts">
-import { useGlobalStore } from '@/stores/global'
-const globalStore = useGlobalStore()
+import { onMounted } from 'vue'
+const route = useRoute()
 enum MyWork {
   uxui = 'UX/UI',
   photo = 'Photo',
 }
 const selectedOption = ref(MyWork.uxui)
-function updatePrototypeView(option: MyWork) {
+onMounted(() => {
+  if (route.name === 'photos') {
+    selectedOption.value = MyWork.photo
+  } else {
+    selectedOption.value = MyWork.uxui
+  }
+})
+async function updatePrototypeView(option: MyWork) {
   selectedOption.value = option
   if (option === MyWork.photo) {
-    globalStore.showPhotos = true
+    await navigateTo('/photos')
   } else {
-    globalStore.showPhotos = false
+    await navigateTo('/')
   }
 }
 </script>

@@ -1,9 +1,7 @@
 <template>
   <NuxtLayout>
     <HeroSection />
-    <TopChoiceCard />
-    <SchoolPayCard />
-    <BlaBlaCard />
+    <PhotoSettings />
   </NuxtLayout>
 </template>
 
@@ -15,7 +13,7 @@ useHead({
   meta: [
     {
       name: t('head.title'),
-      content: t('head.uxui-description'),
+      content: t('head.photo-description'),
     },
   ],
 })
