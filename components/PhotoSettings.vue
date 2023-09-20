@@ -1,22 +1,28 @@
 <template>
-  <div>
+  <div class="photos-container">
     <PhotoGrid :images="formatedImages" />
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onBeforeMount, onBeforeUnmount } from 'vue'
+onBeforeMount(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 const images = ref([
   {
     name: '/v1694527754/roju_1_lkasxh.jpg',
     title: 'ROJU, SONIDO MUCHACHO',
     show: false,
   },
-  // {
-  //   name: 'portraits/manolo_caro_1',
-  //   title: 'MANOLO CARO, ICON EL PAÍS',
-  //   show: false,
-  // },
+  {
+    name: '/v1695130790/manolo1_etlree.jpg',
+    title: 'MANOLO CARO, ICON EL PAÍS',
+    show: false,
+  },
   {
     name: '/v1694527753/madre_2_n9y752.jpg',
     title: 'ANTONIA',
@@ -42,11 +48,11 @@ const images = ref([
     title: 'MARÍA',
     show: false,
   },
-  // {
-  //   name: 'portraits/rodrigo',
-  //   title: 'RODRIGO CUEVAS, ICON EL PAIS',
-  //   show: false,
-  // },
+  {
+    name: '/v1695130796/rodrigo2_jfqjiv.jpg',
+    title: 'RODRIGO CUEVAS, ICON EL PAIS',
+    show: false,
+  },
   {
     name: '/v1694527758/portada_sa2pem.jpg',
     title: 'ONTO THE EARTH',
@@ -94,27 +100,27 @@ const images = ref([
     title: 'OSAMA Y ENRIQUE, ICON EL PAIS',
     show: false,
   },
-  // {
-  //   name: 'portraits/clara',
-  //   title: 'CLARA LAGO, TAPAS MAGAZINE',
-  //   show: false,
-  // },
+  {
+    name: '/v1695130797/clara_xzwrqz.jpg',
+    title: 'CLARA LAGO, TAPAS MAGAZINE',
+    show: false,
+  },
   {
     name: '/v1694527754/dora_rwmzqs.jpg',
     title: 'DORA',
     show: false,
   },
-  // {
-  //   name: 'portraits/kokoshca',
-  //   title: 'KOKOSHCA, SONIDO MUCHACHO',
-  //   horizontal: true,
-  //   show: false,
-  // },
-  // {
-  //   name: 'portraits/GERMAN',
-  //   title: 'GERMÁN ALCARAZU, ICON EL PAÍS',
-  //   show: false,
-  // },
+  {
+    name: '/v1695130788/kokoshca_xt8fy0.jpg',
+    title: 'KOKOSHCA, SONIDO MUCHACHO',
+    horizontal: true,
+    show: false,
+  },
+  {
+    name: '/v1695130796/german_cuhxzx.jpg',
+    title: 'GERMÁN ALCARAZU, ICON EL PAÍS',
+    show: false,
+  },
   {
     name: '/v1694527750/Retina_10_uxb17h.jpg',
     title: 'ADEYEMI AJAO, RETINA EL PÁIS',
@@ -177,11 +183,11 @@ const images = ref([
     horizontal: true,
     show: false,
   },
-  // {
-  //   name: 'portraits/eva_soriano_tapas',
-  //   title: 'EVA SORIANO, TAPAS MAGAZINE',
-  //   show: false,
-  // },
+  {
+    name: '/v1695130794/eva_soriano_tapas_tbcf48.jpg',
+    title: 'EVA SORIANO, TAPAS MAGAZINE',
+    show: false,
+  },
   {
     name: '/v1694527752/elena_li_chen_o7hhpm.jpg',
     title: 'ELENA LI CHEN, UNOMODELS',
@@ -204,6 +210,14 @@ const images = ref([
     show: false,
   },
 ])
+function handleScroll() {
+  images.value = images.value.map((img) => {
+    return {
+      ...img,
+      show: false,
+    }
+  })
+}
 const formatedImages = computed(() => {
   return images.value.map((image) => {
     return {
