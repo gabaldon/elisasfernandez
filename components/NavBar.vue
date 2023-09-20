@@ -80,7 +80,7 @@ function closeMenu() {
       text-decoration: none;
       width: 100%;
       display: block;
-      color: black;
+      color: $black;
       &:hover {
         color: grey;
       }

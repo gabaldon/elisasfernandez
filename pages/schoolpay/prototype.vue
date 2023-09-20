@@ -1,0 +1,21 @@
+<template>
+  <NuxtLayout>
+    <video
+      autoplay
+      src="https://res.cloudinary.com/gabaldon/video/upload/v1695127309/schoolpay_prototype_4_stats_rph7u2.mp4"
+      class="prototype"
+    ></video>
+    <PrototypeVideoFigma
+      :next-project-url="'/blablacar/prototype'"
+      :video-url="'https://res.cloudinary.com/dpgwm1ztw/video/upload/v1690105197/top-choice-prototype_lljodq.mp4'"
+      :figma-url="'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv4HKLbcbdmmFxBhvofldIb%2FTop-Choice---Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-14174%26viewport%3D607%252C555%252C0.04%26t%3DPawjm3A9LPJCp4zJ-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1%253A14174%26mode%3Ddesign'"
+    />
+  </NuxtLayout>
+</template>
+
+<style lang="scss" scoped>
+video {
+  width: 250px;
+  height: auto;
+}
+</style>

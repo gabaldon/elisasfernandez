@@ -7,7 +7,7 @@
     </div>
 
     <div class="mywork-link">
-      <h4>my work</h4>
+      <h4>My work</h4>
       <CustomSwitch
         :options="[MyWork.uxui, MyWork.photo]"
         :selected-option="selectedOption"
