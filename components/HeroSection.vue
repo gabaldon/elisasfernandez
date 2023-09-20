@@ -7,7 +7,7 @@
     </div>
 
     <div class="mywork-link">
-      <h4>My work</h4>
+      <h4>{{ $t('my-work') }}</h4>
       <CustomSwitch
         :options="[MyWork.uxui, MyWork.photo]"
         :selected-option="selectedOption"
@@ -64,6 +64,7 @@ async function updatePrototypeView(option: MyWork) {
 .hero-title {
   position: relative;
   z-index: 100;
+  padding: 8px;
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -155,6 +156,9 @@ h3 {
 @media (max-width: 600px) {
   .hero {
     height: 75vh;
+  }
+  .hero-title {
+    font-size: 16px;
   }
 }
 </style>

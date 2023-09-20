@@ -8,7 +8,7 @@
           <Close />
         </div>
         <li class="yellow">
-          <NuxtLink class="link" to="/about">{{ $t('about') }}</NuxtLink>
+          <NuxtLink class="link" to="/about">{{ $t('about-me') }}</NuxtLink>
         </li>
         <li>
           <NuxtLink class="link" to="/contact">{{ $t('contact') }}</NuxtLink>

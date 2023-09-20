@@ -1,9 +1,9 @@
 <template>
   <NuxtLayout>
     <div class="contact-container">
-      <i18n-t keypath="about-me-title" tag="h3" class="contact-title">
+      <i18n-t keypath="contact-me-title" tag="h3" class="contact-title">
         <span class="highlighted-text">{{
-          $t('contact').toLocaleLowerCase()
+          $t('contact-me').toLocaleLowerCase()
         }}</span>
       </i18n-t>
       <div class="contact-links">
@@ -86,14 +86,14 @@ useHead({
   .contact-container {
     grid-template-columns: 1fr;
     .contact-title {
-      font-size: 80px;
+      font-size: 74px;
     }
   }
 }
 @media (max-width: 300px) {
   .contact-container {
     .contact-title {
-      font-size: 60px;
+      font-size: 58px;
       margin: 16px;
     }
     .contact-links {
