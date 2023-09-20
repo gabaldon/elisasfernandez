@@ -115,7 +115,6 @@ function updateCoordinates(event) {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $yellow;
     height: 100%;
     &:last-of-type {
       margin-bottom: 0px;
@@ -133,27 +132,10 @@ function updateCoordinates(event) {
 @media (max-width: 1024px) {
   .photos-container {
     grid-template-columns: 27.5vw 27.5vw 27.5vw;
-    // .img-container {
-    //   grid-column: auto / span 2;
-    //   margin: 0px;
-    // }
     .title {
       font-size: 16px;
       padding-top: 1px;
     }
   }
 }
-// @media (max-width: 600px) {
-//   .photos-container {
-//     grid-template-columns: 1fr 1fr;
-//     .img-container {
-//       grid-column: auto / span 2;
-//       margin: 0px;
-//     }
-//     .title {
-//       font-size: 16px;
-//       padding-top: 1px;
-//     }
-//   }
-// }
 </style>

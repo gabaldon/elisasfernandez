@@ -13,14 +13,7 @@
         :selected-option="selectedOption"
         @change="updatePrototypeView"
       />
-      <NuxtImg
-        provider="cloudinary"
-        class="arrow"
-        alt="arrow down"
-        src="/v1694509649/arrow_jtotkb.gif"
-        width="40"
-        height="40"
-      />
+      <img class="arrow" src="/img/arrow.gif" />
     </div>
   </section>
 </template>
@@ -93,6 +86,11 @@ h3 {
   height: max-content;
   position: relative;
   z-index: 200;
+  .arrow {
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+  }
 }
 
 .arrow {

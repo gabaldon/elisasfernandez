@@ -86,7 +86,7 @@ useHead({
   .contact-container {
     grid-template-columns: 1fr;
     .contact-title {
-      font-size: 74px;
+      font-size: 70px;
     }
   }
 }
