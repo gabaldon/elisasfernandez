@@ -15,17 +15,18 @@
       @mousemove="image.text.show = true"
       @mouseleave="image.text.show = false"
     >
-      <p
+      <!-- <p
         v-show="image.text.show"
         class="title"
         :style="{ top: y + 'px', left: x + 'px' }"
       >
         {{ image.text.title }}
-      </p>
+      </p> -->
       <NuxtImg
         class="image"
         provider="cloudinary"
         :src="image.src"
+        :alt="image.title"
         loading="lazy"
         sizes="sm:355px md:320px lg:800px"
         @click="showImage(image)"

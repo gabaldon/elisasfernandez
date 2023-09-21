@@ -3,7 +3,7 @@
     <PrototypeVideoFigma
       :next-project-url="'/blablacar/prototype'"
       :video-url="'https://res.cloudinary.com/dpgwm1ztw/video/upload/v1690105197/top-choice-prototype_lljodq.mp4'"
-      :figma-url="'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv4HKLbcbdmmFxBhvofldIb%2FTop-Choice---Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-14174%26viewport%3D607%252C555%252C0.04%26t%3DPawjm3A9LPJCp4zJ-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1%253A14174%26mode%3Ddesign'"
+      :figma-url="'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv4HKLbcbdmmFxBhvofldIb%2FTop-Choice---Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-14174%26viewport%3D627%252C617%252C0.07%26t%3DdnoH1bWTBKypDtg4-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A14174%26mode%3Ddesign'"
     />
   </NuxtLayout>
 </template>

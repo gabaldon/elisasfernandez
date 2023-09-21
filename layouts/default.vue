@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-container">
     <NavBar />
     <div class="container">
       <slot></slot>
@@ -9,6 +9,11 @@
 </template>
 
 <style lang="scss" scoped>
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  align-items: flex-end;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;

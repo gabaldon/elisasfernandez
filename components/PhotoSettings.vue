@@ -127,11 +127,6 @@ const images = ref([
     show: false,
   },
   {
-    name: '/v1694527749/retina_product_vcuels.jpg',
-    title: 'FORMAS CON ALMA, RETINA EL PAÍS',
-    show: false,
-  },
-  {
     name: '/v1694527754/ALASKA_RETINA_fdzzvc.jpg',
     title: 'ALASKA, RETINA EL PAÍS',
     show: false,
@@ -139,6 +134,11 @@ const images = ref([
   {
     name: '/v1694527755/INGRID_t8f7vq.jpg',
     title: 'INGRID GARCÍA-JONSSON, RETINA EL PAÍS',
+    show: false,
+  },
+  {
+    name: '/v1694527757/Palomo_Spain_Naranja_4_jblvb9.jpg',
+    title: 'PALOMO SPAIN, ICON EL PAÍS',
     show: false,
   },
   {
@@ -168,8 +168,8 @@ const images = ref([
     show: false,
   },
   {
-    name: '/v1694527757/Palomo_Spain_Naranja_4_jblvb9.jpg',
-    title: 'PALOMO SPAIN, ICON EL PAÍS',
+    name: '/v1694527749/retina_product_vcuels.jpg',
+    title: 'FORMAS CON ALMA, RETINA EL PAÍS',
     show: false,
   },
   {

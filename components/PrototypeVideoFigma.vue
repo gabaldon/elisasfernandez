@@ -41,22 +41,30 @@ function updatePrototypeView(option: string) {
 </script>
 <style lang="scss" scoped>
 .prototype-container {
-  margin-top: 24px;
+  margin-top: 32px;
   margin-bottom: 32px;
   display: grid;
+  grid-template-rows: max-content max-content 1fr;
   row-gap: 24px;
   justify-items: center;
   justify-content: center;
   align-items: center;
   .prototype {
-    width: 80vw;
-    height: 80vh;
+    align-self: center;
+    width: 50vw;
+    height: 74vh;
   }
 }
 @media (max-width: 600px) {
   .prototype-container {
+    display: grid;
+    align-items: flex-start;
     .floating-btn {
       display: none;
+    }
+    .prototype {
+      width: 80vw;
+      height: 74vh;
     }
   }
 }
