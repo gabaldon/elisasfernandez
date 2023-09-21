@@ -9,7 +9,7 @@
     <div class="mywork-link">
       <h4>{{ $t('my-work') }}</h4>
       <CustomSwitch
-        :options="[MyWork.uxui, MyWork.photo]"
+        :options="options"
         :selected-option="selectedOption"
         @change="updatePrototypeView"
       />
@@ -19,23 +19,36 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 const route = useRoute()
 enum MyWork {
-  uxui = 'UX/UI',
-  photo = 'Photo',
+  uxui,
+  photo,
 }
-const selectedOption = ref(MyWork.uxui)
-onMounted(() => {
-  if (route.name === 'photos') {
-    selectedOption.value = MyWork.photo
-  } else {
-    selectedOption.value = MyWork.uxui
+const translations = computed(() => {
+  return {
+    [MyWork.uxui]: 'UX/UI',
+    [MyWork.photo]: t('photo'),
   }
 })
-async function updatePrototypeView(option: MyWork) {
+const options = computed(() => [
+  translations.value[MyWork.uxui],
+  translations.value[MyWork.photo],
+])
+
+const selectedOption: Ref<string> = ref(translations.value[MyWork.uxui])
+onMounted(() => {
+  if (route.name === 'photos') {
+    selectedOption.value = translations.value[MyWork.photo]
+  } else {
+    selectedOption.value = translations.value[MyWork.uxui]
+  }
+})
+async function updatePrototypeView(option: string) {
   selectedOption.value = option
-  if (option === MyWork.photo) {
+  if (option === translations.value[MyWork.photo]) {
     await navigateTo('/photos')
   } else {
     await navigateTo('/')
