@@ -26,11 +26,11 @@
           <li>Figma</li>
           <li>HTML & CSS</li>
           <li>Design Thinking Methodology</li>
-          <li>Agile methodology</li>
-          <li>Visual design</li>
-          <li>UX research</li>
+          <li>Agile Methodology</li>
+          <li>Visual Design</li>
+          <li>UX Research</li>
           <li>Information Architecture</li>
-          <li>Site redesign</li>
+          <li>Site Redesign</li>
           <li>Design Systems</li>
           <li>Prototyping</li>
           <li>Wireframing</li>

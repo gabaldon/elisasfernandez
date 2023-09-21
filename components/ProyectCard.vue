@@ -7,7 +7,7 @@
       :src="mockup"
       width="600"
       height="415"
-      sizes="sm:355px md:320px lg:480px"
+      sizes="sm:355px md:420px lg:1200px"
     />
     <NuxtImg
       v-if="mockupPosition == 'left'"
@@ -17,7 +17,7 @@
       :src="mockup"
       width="600"
       height="415"
-      sizes="sm:355px md:320px lg:480px"
+      sizes="sm:355px md:420px lg:1200px"
     />
     <div class="project-card-container">
       <SvgIcon class="title" :name="title" />
@@ -47,7 +47,7 @@
       :src="mockup"
       width="600"
       height="415"
-      sizes="sm:355px md:320px lg:480px"
+      sizes="sm:355px md:420px lg:1200px"
     />
   </div>
 </template>
@@ -131,6 +131,9 @@ const backgroundColor = computed(() => {
   background-color: var(--bg-color);
   .title {
     max-width: 80vw;
+  }
+  .description {
+    font-weight: 500;
   }
   .project-card-container {
     display: grid;
