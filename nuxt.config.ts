@@ -102,6 +102,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: ['@/styles/main.scss'],
   vite: {
     plugins: [
       svgLoader({
@@ -124,7 +125,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "@/styles/main.scss";',
+          additionalData: '@use "@/styles/colors.scss" as *;',
         },
       },
     },

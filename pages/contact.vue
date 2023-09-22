@@ -66,7 +66,8 @@ useHead({
     font-family: 'PPMori';
     margin: 24px 24px 48px 24px;
     .highlighted-text {
-      color: $yellow;
+      font-weight: lighter;
+      background-color: $yellow;
     }
   }
   .contact-links {

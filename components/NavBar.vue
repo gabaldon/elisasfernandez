@@ -47,7 +47,7 @@ function closeMenu() {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .navbar {
   background-color: $grey;
   display: flex;

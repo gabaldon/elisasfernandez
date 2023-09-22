@@ -66,7 +66,8 @@ useHead({
       display: inline-block;
       .highlighted-text {
         display: inline-block;
-        color: $yellow;
+        font-weight: lighter;
+        background-color: $yellow;
       }
     }
     .text {
@@ -102,7 +103,7 @@ useHead({
     grid-template-columns: 1fr;
     .about-content {
       .about-title {
-        font-size: 80px;
+        font-size: 70px;
       }
     }
   }
@@ -115,7 +116,7 @@ useHead({
     .about-content {
       margin: 16px;
       .about-title {
-        font-size: 60px;
+        font-size: 58px;
       }
     }
   }

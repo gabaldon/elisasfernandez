@@ -2,7 +2,7 @@
   <NuxtLayout>
     <PrototypeVideoFigma
       :next-project-url="'/topchoice/prototype'"
-      :video-url="'https://res.cloudinary.com/dpgwm1ztw/video/upload/v1690104898/blablacar-prototype_1_ej4gik.mp4'"
+      :video-url="'https://res.cloudinary.com/gabaldon/video/upload/v1695582571/blablacar-prototype-all_eeddfn.mp4'"
       :figma-url="'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBO4PunIzHYuEofe5EslRei%2FBlaBlaCar-Routines---Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2966%26viewport%3D660%252C448%252C0.09%26t%3DgLYAmUNq42tOUvh0-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A1289%26mode%3Ddesign'"
     />
   </NuxtLayout>

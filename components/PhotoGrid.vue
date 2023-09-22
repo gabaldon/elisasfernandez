@@ -15,13 +15,6 @@
       @mousemove="image.text.show = true"
       @mouseleave="image.text.show = false"
     >
-      <!-- <p
-        v-show="image.text.show"
-        class="title"
-        :style="{ top: y + 'px', left: x + 'px' }"
-      >
-        {{ image.text.title }}
-      </p> -->
       <NuxtImg
         class="image"
         provider="cloudinary"
@@ -32,16 +25,6 @@
         @click="showImage(image)"
       />
     </div>
-    <!-- <div v-if="imageToShow" class="big-image-container">
-      <div @click="hideImage">CLOSE</div>
-      <NuxtImg
-        class="big-imaGE"
-        provider="cloudinary"
-        :src="imageToShow.src"
-        loading="lazy"
-        sizes="sm:355px md:320px lg:800px"
-      />
-    </div> -->
   </div>
 </template>
 
@@ -60,10 +43,6 @@ const imageToShow = ref(null)
 function showImage(image) {
   imageToShow.value = image
 }
-
-// function hideImage() {
-//   imageToShow.value = null
-// }
 
 function updateCoordinates(event) {
   x.value = event.clientX + 20

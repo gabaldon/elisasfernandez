@@ -21,7 +21,7 @@ useHead({
 })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .under-constrution {
   display: grid;
   grid-template-rows: max-content max-content;

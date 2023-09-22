@@ -26,17 +26,19 @@
         <NuxtLink :to="prototypeLink">
           <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
         </NuxtLink>
-        <NuxtLink v-if="isDesktop" :to="caseStudyLink">
-          <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
-        </NuxtLink>
-        <a
-          v-else
-          target="_blank"
-          :href="behanceLink"
-          aria-label="Go to the Behance profile"
-        >
-          <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
-        </a>
+        <ClientOnly fallback-tag="span" fallback="Loading...">
+          <NuxtLink v-if="isDesktop || !showBehance" :to="caseStudyLink">
+            <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
+          </NuxtLink>
+          <a
+            v-else
+            target="_blank"
+            :href="behanceLink"
+            aria-label="Go to the Behance profile"
+          >
+            <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
+          </a>
+        </ClientOnly>
       </div>
     </div>
     <NuxtImg
@@ -53,17 +55,18 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-const isDesktop = computed(() => {
-  if (process.client) {
-    const platform = navigator.platform.toLowerCase()
-    return /mac|macintel|win|linux/i.test(platform)
-  } else {
-    return false
-  }
+import { computed, onBeforeMount } from 'vue'
+const isDesktop = ref(false)
+onBeforeMount(() => {
+  const platform = navigator.platform.toLowerCase()
+  isDesktop.value = /mac|macintel|win|linux/i.test(platform)
 })
 
 const props = defineProps({
+  showBehance: {
+    type: Boolean,
+    default: true,
+  },
   mockupPosition: {
     type: String,
     required: true,

@@ -1,10 +1,11 @@
 <template>
   <ProyectCard
     :mockup-position="'right'"
+    :show-behance="false"
     :title="'schoolpay-title'"
     :bg-color="'#f3f5ff'"
     :behance-link="'https://www.behance.net/gallery/176023503/BLABLACAR-NEW-FEATURE-CASE-STUDY'"
-    :case-study-link="'/'"
+    :case-study-link="'/schoolpay'"
     :prototype-link="'/schoolpay/prototype'"
     :description="'schoolpay-description'"
     :text-color="'black'"

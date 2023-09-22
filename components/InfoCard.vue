@@ -37,7 +37,7 @@ defineProps({
   },
 })
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .info-container {
   border-radius: 24px;
   display: flex;

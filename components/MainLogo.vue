@@ -18,7 +18,7 @@
     </svg>
   </div>
 </template>
-<style>
+<style scoped lang="scss">
 .logo-container {
   position: absolute;
   display: flex;
