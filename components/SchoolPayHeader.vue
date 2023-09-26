@@ -12,11 +12,22 @@
       loading="lazy"
       sizes="sm:355px md:320px lg:800px"
     />
+    <div class="case-study-chips">
+      <CaseStudyChip v-for="chip in headerChips" :key="chip" :text="$t(chip)" />
+    </div>
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref } from 'vue'
 import SchoolPayLogo from '@/assets/svg/schoolpay-logo.svg'
+const headerChips: Ref<Array<string>> = ref([
+  'case-study',
+  'figma',
+  'individual-role',
+  'ironhack',
+  '10days',
+])
 </script>
 
 <style lang="scss" scoped>
@@ -47,6 +58,11 @@ import SchoolPayLogo from '@/assets/svg/schoolpay-logo.svg'
   }
   .mockup {
     max-width: 40vw;
+  }
+  .case-study-chips {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 600px) {

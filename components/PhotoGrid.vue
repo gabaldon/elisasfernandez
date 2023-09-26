@@ -88,9 +88,6 @@ function updateCoordinates(event) {
     background: $yellow;
     padding-top: 0.1vw;
   }
-  .cursor {
-    cursor: none;
-  }
   .img-container {
     display: flex;
     justify-content: center;
@@ -115,6 +112,11 @@ function updateCoordinates(event) {
     .title {
       font-size: 16px;
       padding-top: 1px;
+    }
+    .img-container {
+      &:last-of-type {
+        grid-column: auto / span 3;
+      }
     }
   }
 }
