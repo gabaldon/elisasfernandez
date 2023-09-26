@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div ref="demo" class="demo">
-      <div v-if="isIntersecting" class="intersecting">
+    <div ref="content">
+      <div v-show="isIntersecting" class="intersecting">
         <slot></slot>
       </div>
     </div>
@@ -11,7 +11,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 
-const demo = ref('')
+const content = ref('')
 const isIntersecting = ref(false)
 
 onMounted(() => {
@@ -29,8 +29,8 @@ onMounted(() => {
     }
   )
 
-  if (demo.value) {
-    observer.observe(demo.value)
+  if (content.value) {
+    observer.observe(content.value)
   }
 })
 </script>
@@ -66,7 +66,7 @@ onMounted(() => {
   }
 }
 
-.demo {
+.content {
   display: inline-block;
   opacity: 0;
   transform: translateY(10px);
