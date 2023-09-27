@@ -27,7 +27,7 @@
           <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
         </NuxtLink>
         <ClientOnly fallback-tag="span" fallback="Loading...">
-          <NuxtLink v-if="isDesktop || !showBehance" :to="caseStudyLink">
+          <NuxtLink v-if="!showBehance" :to="caseStudyLink">
             <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
           </NuxtLink>
           <a
