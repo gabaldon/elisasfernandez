@@ -2,8 +2,8 @@
   <NuxtLayout>
     <CaseStudy
       :pdf-url="'/pdf/top-choice-case-study.pdf'"
-      :next-project-url="'/blablacar'"
-      :prototype-url="'/topchoice/prototype'"
+      :next-project-url="'/schoolpay'"
+      :prototype-url="'/schoolpay/prototype'"
     />
   </NuxtLayout>
 </template>

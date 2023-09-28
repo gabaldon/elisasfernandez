@@ -40,6 +40,7 @@ const headerChips: Ref<Array<string>> = ref([
   justify-content: center;
   justify-items: center;
   grid-gap: 100px;
+  row-gap: 24px;
   .title {
     font-family: 'Chango';
     font-size: 48px;
@@ -70,6 +71,7 @@ const headerChips: Ref<Array<string>> = ref([
   .header {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 50px;
   }
 }
 @media (max-width: 600px) {
