@@ -1,6 +1,6 @@
 <template>
   <header class="navbar">
-    <NuxtLink class="logo-link" to="/"><MainLogo /></NuxtLink>
+    <NuxtLink class="logo-link" to="/" rel="home"><MainLogo /></NuxtLink>
     <input id="side-menu" class="checkbox" type="checkbox" />
     <nav class="navbar-tabs rounded-border">
       <ul class="navbar-links rounded-border">
@@ -8,10 +8,14 @@
           <Close />
         </div>
         <li class="yellow">
-          <NuxtLink class="link" to="/about">{{ $t('about-me') }}</NuxtLink>
+          <NuxtLink class="link" to="/about" rel="about">{{
+            $t('about-me')
+          }}</NuxtLink>
         </li>
         <li>
-          <NuxtLink class="link" to="/contact">{{ $t('contact') }}</NuxtLink>
+          <NuxtLink class="link" to="/contact" rel="contact">{{
+            $t('contact')
+          }}</NuxtLink>
         </li>
         <li class="yellow">
           <a

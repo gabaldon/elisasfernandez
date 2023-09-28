@@ -37,7 +37,6 @@ import SlideButton from '@/assets/svg/slide-button-ds.svg'
   width: 100%;
   grid-template-columns: 1fr;
   grid-gap: 100px;
-  font-size: 24px;
   .image-container {
     width: 100%;
     justify-content: center;

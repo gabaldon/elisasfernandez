@@ -50,7 +50,6 @@
 .problem-statement {
   display: grid;
   grid-gap: 100px;
-  font-size: 24px;
   .image-container {
     justify-content: center;
     align-items: center;
@@ -64,7 +63,6 @@
 }
 @media (max-width: 600px) {
   .problem-statement {
-    font-size: 16px;
     grid-gap: 32px;
     .image-container {
       display: grid;

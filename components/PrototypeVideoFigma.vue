@@ -5,7 +5,7 @@
       :selected-option="selectedOption"
       @change="updatePrototypeView"
     />
-    <NuxtLink class="floating-btn" :to="nextProjectUrl">
+    <NuxtLink class="floating-btn" :to="nextProjectUrl" rel="next-project">
       <CustomButton type="primary">{{ $t('next-project') }}</CustomButton>
     </NuxtLink>
     <InfoCard v-if="selectedOption == 'Figma'" :text="$t('figma-info')" />

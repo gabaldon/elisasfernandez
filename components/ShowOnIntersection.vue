@@ -1,7 +1,7 @@
 <template>
   <div>
     <div ref="content">
-      <div v-show="isIntersecting" class="intersecting">
+      <div v-if="isIntersecting" class="intersecting">
         <slot></slot>
       </div>
     </div>

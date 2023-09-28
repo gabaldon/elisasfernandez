@@ -25,7 +25,6 @@ import SillaIcons from '@/assets/svg/silla-icons.svg'
   width: 100%;
   grid-template-columns: 1fr;
   grid-gap: 100px;
-  font-size: 24px;
   .icons-container {
     width: 100%;
     justify-content: center;

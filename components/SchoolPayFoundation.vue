@@ -46,7 +46,6 @@ import Shadows4 from '@/assets/svg/shadows4.svg'
   width: 100%;
   grid-template-columns: 1fr;
   grid-gap: 100px;
-  font-size: 24px;
   .foundation-grid {
     justify-content: center;
     display: grid;

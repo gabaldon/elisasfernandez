@@ -14,8 +14,9 @@ useHead({
   title: t('head.title'),
   meta: [
     {
-      name: t('head.title'),
-      content: t('head.uxui-description'),
+      name: 'description',
+      content:
+        'Elisa S Fernández is a UX/UI designer based in Madrid - elisasanchezfernandez@gmail.com',
     },
   ],
 })

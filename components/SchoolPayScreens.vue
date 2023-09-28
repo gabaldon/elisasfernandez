@@ -118,7 +118,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 100px;
-  font-size: 24px;
   .screen-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,7 +172,6 @@
 }
 @media (max-width: 600px) {
   .screens {
-    font-size: 16px;
     max-width: 100%;
     grid-gap: 24px;
     .screen-section {

@@ -1,10 +1,10 @@
 <template>
   <div class="case-study-container">
     <div class="floating-btn">
-      <NuxtLink :to="prototypeUrl">
+      <NuxtLink :to="prototypeUrl" rel="prototype">
         <CustomButton type="primary">{{ $t('prototype') }}</CustomButton>
       </NuxtLink>
-      <NuxtLink :to="nextProjectUrl">
+      <NuxtLink :to="nextProjectUrl" rel="next-project">
         <CustomButton type="with-border">{{ $t('next-project') }}</CustomButton>
       </NuxtLink>
     </div>

@@ -40,14 +40,14 @@
   </NuxtLayout>
 </template>
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
 useHead({
-  title: t('head.title'),
+  title: 'Elisa S Fernández',
   meta: [
     {
-      name: t('head.title'),
-      content: t('head.aboutme-description'),
+      hid: 'description',
+      name: 'description',
+      content:
+        'Product designer and journalist with more than 10 years of experience in marketing and social media companies.',
     },
   ],
 })

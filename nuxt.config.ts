@@ -34,8 +34,7 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            process.env.npm_package_description ||
-            'Elisa S Fernández is a Photographer based in Madrid - elisasanchezfernandez@gmail.com',
+            'Elisa S Fernández is a UX/UI designer based in Madrid - elisasanchezfernandez@gmail.com',
         },
         {
           hid: 'twitter:title',
@@ -46,7 +45,7 @@ export default defineNuxtConfig({
           hid: 'twitter:description',
           name: 'twitter:description',
           content:
-            'Elisa S Fernández is a Photographer based in Madrid - elisasanchezfernandez@gmail.com',
+            'Elisa S Fernández is a UX/UI designer based in Madrid - elisasanchezfernandez@gmail.com',
         },
         {
           hid: 'twitter:image',
@@ -67,7 +66,7 @@ export default defineNuxtConfig({
           hid: 'og:description',
           property: 'og:description',
           content:
-            'Elisa S Fernández is a Photographer based in Madrid - elisasanchezfernandez@gmail.com',
+            'Elisa S Fernández is a UX/UI designer based in Madrid - elisasanchezfernandez@gmail.com',
         },
         {
           hid: 'og:image',
@@ -88,6 +87,9 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'preload', as: 'font' },
+        { rel: 'home', href: 'https://elisasfernandez.com/' },
+        { rel: 'contact', href: 'https://elisasfernandez.com/contact' },
+        { rel: 'about', href: 'https://elisasfernandez.com/about' },
       ],
     },
   },

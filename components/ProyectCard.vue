@@ -23,12 +23,12 @@
       <SvgIcon class="title" :name="title" />
       <p class="description">{{ $t(description) }}</p>
       <div class="btns-container">
-        <NuxtLink :to="prototypeLink">
-          <CustomButton :type="'primary'">{{ $t('prototype') }}</CustomButton>
+        <NuxtLink :to="prototypeLink" rel="prototype">
+          <CustomButton :type="'secondary'">{{ $t('prototype') }}</CustomButton>
         </NuxtLink>
         <ClientOnly fallback-tag="span" fallback="Loading...">
-          <NuxtLink v-if="!showBehance" :to="caseStudyLink">
-            <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
+          <NuxtLink v-if="!showBehance" :to="caseStudyLink" rel="case-study">
+            <CustomButton type="primary">{{ $t('case-study') }}</CustomButton>
           </NuxtLink>
           <a
             v-else
@@ -36,7 +36,7 @@
             :href="behanceLink"
             aria-label="Go to the Behance profile"
           >
-            <CustomButton type="secondary">{{ $t('case-study') }}</CustomButton>
+            <CustomButton type="primary">{{ $t('case-study') }}</CustomButton>
           </a>
         </ClientOnly>
       </div>

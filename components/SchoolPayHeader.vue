@@ -36,6 +36,7 @@ const headerChips: Ref<Array<string>> = ref([
   display: grid;
   grid-template-columns: max-content max-content;
   align-items: center;
+  max-width: 100vw;
   justify-content: center;
   justify-items: center;
   grid-gap: 100px;
@@ -63,6 +64,12 @@ const headerChips: Ref<Array<string>> = ref([
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 600px) {

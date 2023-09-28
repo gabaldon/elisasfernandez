@@ -17,7 +17,6 @@
   width: 100%;
   grid-template-columns: 1fr;
   grid-gap: 100px;
-  font-size: 24px;
   .prototype {
     width: 100%;
     max-height: 70vh;

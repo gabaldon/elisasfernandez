@@ -14,10 +14,18 @@
 .content {
   max-width: 70vw;
   width: 100%;
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .content {
+    max-width: 100%;
+    font-size: 18px;
+  }
 }
 @media (max-width: 600px) {
   .content {
     max-width: 100%;
+    font-size: 16px;
   }
 }
 </style>
