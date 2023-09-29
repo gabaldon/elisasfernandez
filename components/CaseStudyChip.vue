@@ -1,5 +1,5 @@
 <template>
-  <div class="chip">
+  <div class="chip" :style="{ 'background-color': color, color: textColor }">
     <p class="text">{{ text }}</p>
   </div>
 </template>
@@ -9,14 +9,20 @@ defineProps({
     type: String,
     required: true,
   },
+  color: {
+    type: String,
+    default: '#fffefd',
+  },
+  textColor: {
+    type: String,
+    default: '#121f39',
+  },
 })
 </script>
 <style lang="scss">
 .chip {
-  background-color: #fffefd;
   border-radius: 16px;
   .text {
-    color: #121f39;
     font-family: 'Avenir';
     font-size: 16px;
     padding: 4px 16px;

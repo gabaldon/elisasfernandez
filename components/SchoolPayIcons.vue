@@ -1,5 +1,5 @@
 <template>
-  <SchoolPaySection>
+  <CaseStudySection>
     <div class="fonts">
       <h3 class="schoolpay-title gradient">{{ $t('icons') }}</h3>
       <div class="icons-container">
@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-  </SchoolPaySection>
+  </CaseStudySection>
 </template>
 
 <script setup>

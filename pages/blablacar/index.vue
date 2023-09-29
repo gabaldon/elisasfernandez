@@ -1,9 +1,16 @@
 <template>
   <NuxtLayout>
-    <CaseStudy
-      :pdf-url="'/pdf/blablacar-case-study.pdf'"
-      :next-project-url="'/topchoice'"
-      :prototype-url="'/blablacar/prototype'"
-    />
+    <div class="case-study-margin">
+      <BlablacarHeader />
+      <BlablacarAbout />
+      <BlablacarUxResearch />
+      <BlablacarPrototypeLowfi />
+      <BlablacarPrototypeMidfi />
+      <BlablacarUserInterface />
+      <BlablacarFoundationsDesignSystem />
+      <BlablacarPrototypeHifi />
+      <BlablacarPrototype />
+      <NextProjectBtn :url="'/topchoice'" />
+    </div>
   </NuxtLayout>
 </template>

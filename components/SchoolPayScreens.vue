@@ -1,5 +1,5 @@
 <template>
-  <SchoolPaySection>
+  <CaseStudySection>
     <div class="screens">
       <h3 class="schoolpay-title gradient">{{ $t('screens') }}</h3>
       <div class="screen-section">
@@ -110,7 +110,7 @@
         </div>
       </div>
     </div>
-  </SchoolPaySection>
+  </CaseStudySection>
 </template>
 
 <style lang="scss" scoped>

@@ -1,6 +1,7 @@
 <template>
-  <ProyectCard
+  <ProjectCard
     :mockup-position="'left'"
+    :show-behance="false"
     :title="'blablacar-title'"
     :bg-color="'#6DC563'"
     :behance-link="'https://www.behance.net/gallery/176023503/BLABLACAR-NEW-FEATURE-CASE-STUDY'"

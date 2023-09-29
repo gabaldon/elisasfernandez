@@ -70,7 +70,7 @@ function updateCoordinates(event) {
   align-items: center;
   column-gap: 0.5vw;
   row-gap: 0.5vw;
-  margin-bottom: 1vw;
+  margin-bottom: 10vw;
   .image {
     width: 100%;
     object-fit: cover;
@@ -118,6 +118,11 @@ function updateCoordinates(event) {
         grid-column: auto / span 3;
       }
     }
+  }
+}
+@media (max-width: 600px) {
+  .photos-container {
+    margin-bottom: 32px;
   }
 }
 </style>

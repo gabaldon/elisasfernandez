@@ -1,5 +1,5 @@
 <template>
-  <SchoolPaySection>
+  <CaseStudySection>
     <div class="problem-statement">
       <i18n-t
         keypath="problem-statement"
@@ -43,7 +43,7 @@
         />
       </div>
     </div>
-  </SchoolPaySection>
+  </CaseStudySection>
 </template>
 
 <style lang="scss" scoped>

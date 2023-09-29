@@ -1,9 +1,5 @@
 <template>
   <NuxtLayout>
-    <CaseStudy
-      :pdf-url="'/pdf/top-choice-case-study.pdf'"
-      :next-project-url="'/schoolpay'"
-      :prototype-url="'/schoolpay/prototype'"
-    />
+    <TopChoiceHeaderLink />
   </NuxtLayout>
 </template>

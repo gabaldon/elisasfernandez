@@ -9,6 +9,7 @@
       <SchoolPayIcons />
       <SchoolPayDesignSystem />
       <SchoolPayPrototype />
+      <NextProjectBtn :url="'/blablacar'" />
     </div>
   </NuxtLayout>
 </template>

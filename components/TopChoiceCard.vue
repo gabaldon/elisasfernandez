@@ -1,7 +1,8 @@
 <template>
-  <ProyectCard
+  <ProjectCard
     :mockup-position="'left'"
     :title="'topchoice-title'"
+    :show-behance="true"
     :bg-color="'#029BC7'"
     :behance-link="'https://www.behance.net/gallery/173941357/TOP-CHOICE-UXUI-CASE-STUDY'"
     :case-study-link="'/topchoice'"

@@ -86,7 +86,12 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'preload', as: 'font' },
+        {
+          rel: 'preload',
+          href: 'fonts/PPMori-SemiBold.ttf',
+          as: 'font',
+          type: 'font/ttf',
+        },
         { rel: 'home', href: 'https://elisasfernandez.com/' },
         { rel: 'contact', href: 'https://elisasfernandez.com/contact' },
         { rel: 'about', href: 'https://elisasfernandez.com/about' },
@@ -104,7 +109,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: ['@/styles/main.scss'],
+  css: ['~/assets/styles/main.scss'],
   vite: {
     plugins: [
       svgLoader({
@@ -127,7 +132,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/styles/colors.scss" as *;',
+          additionalData: '@use "@/assets/styles/colors.scss" as *;',
         },
       },
     },

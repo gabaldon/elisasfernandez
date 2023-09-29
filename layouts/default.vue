@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main-container {
   min-height: 100vh;
   display: grid;

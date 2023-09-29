@@ -1,5 +1,5 @@
 <template>
-  <SchoolPaySection>
+  <CaseStudySection>
     <div class="fonts">
       <h3 class="schoolpay-title gradient">{{ $t('fonts') }}</h3>
       <div class="image-container">
@@ -7,7 +7,7 @@
         <AvenirFont class="image" />
       </div>
     </div>
-  </SchoolPaySection>
+  </CaseStudySection>
 </template>
 
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-  <ProyectCard
+  <ProjectCard
     :mockup-position="'right'"
     :show-behance="false"
     :title="'schoolpay-title'"
