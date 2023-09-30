@@ -1,0 +1,1 @@
+import{_ as t}from"./nuxt-layout.837fe1da.js";import{_ as e,g as c,w as n,o as _,a as s}from"./entry.09189ebf.js";const a={},r=s("h3",null,"Top choice case study",-1);function u(d,f){const o=t;return _(),c(o,null,{default:n(()=>[r]),_:1})}const p=e(a,[["render",u]]);export{p as default};
