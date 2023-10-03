@@ -59,6 +59,8 @@ const headerChips: Ref<Array<string>> = ref([
     }
   }
   .mockup {
+    width: 40vw;
+    height: 30vw;
     max-width: 40vw;
   }
   .case-study-chips {
@@ -90,6 +92,8 @@ const headerChips: Ref<Array<string>> = ref([
       }
     }
     .mockup {
+      width: 70vw;
+      height: 70vw;
       max-width: 70vw;
     }
   }

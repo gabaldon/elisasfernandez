@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div ref="content">
+    <div ref="content" class="container">
       <div v-if="isIntersecting" class="intersecting">
         <slot></slot>
       </div>
@@ -36,6 +36,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.container {
+  min-height: 23vw;
+}
 .intersecting {
   display: grid;
   justify-content: center;

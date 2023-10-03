@@ -34,7 +34,7 @@ defineProps({
 })
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .btn {
   width: 100%;
   color: $white;
@@ -61,6 +61,7 @@ defineProps({
     -ms-transition: all 3ms linear;
     transition: all 3ms linear;
     background-color: $black;
+    border: 1.5px solid $black;
     .arrow {
       stroke: $white;
     }
@@ -70,7 +71,7 @@ defineProps({
     -webkit-transition: all 3ms linear;
     -ms-transition: all 3ms linear;
     transition: all 3ms linear;
-    border: 2px solid $black;
+    border: 1.5px solid $black;
     background-color: transparent;
     .arrow {
       stroke: $black;
