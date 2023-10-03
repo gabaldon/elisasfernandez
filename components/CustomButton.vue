@@ -70,7 +70,8 @@ defineProps({
     -webkit-transition: all 3ms linear;
     -ms-transition: all 3ms linear;
     transition: all 3ms linear;
-    background-color: $white;
+    border: 2px solid $black;
+    background-color: transparent;
     .arrow {
       stroke: $black;
     }

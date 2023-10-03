@@ -72,17 +72,16 @@ function closeMenu() {
     display: none;
   }
   .navbar-links {
-    font-weight: lighter;
     display: grid;
     grid-template-columns: repeat(4, max-content);
     align-items: flex-start;
     justify-content: space-between;
     .link {
-      padding: 24px;
+      padding: 24px 16px;
       text-decoration: none;
       font-size: 16px;
       text-decoration: none;
-      width: 100%;
+      width: max-content;
       display: block;
       color: $black;
       &:hover {
@@ -147,6 +146,7 @@ function closeMenu() {
       transition: all 0.75s ease;
       .link {
         padding: 8px 16px 8px 16px;
+        width: 100%;
         &.language-select {
           padding: 0px;
           justify-self: flex-end;
